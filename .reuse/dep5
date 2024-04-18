@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: feed2email
+Upstream-Contact: Cyril AUGIER <cicxjo@posteo.net>
+Source: https://github.com/cicxjo/feed2email
+
+Files: .gitignore
+       composer.json
+       phpcs.xml
+       phpunit.xml
+Copyright: 2024 Cyril AUGIER <cicxjo@posteo.net>, et al.
+License: CC0-1.0
