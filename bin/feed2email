@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+
+require_once('src/autoload.php');
+
+(new Feed2Email\Autoload())->addNamespace('Feed2Email', 'src/')
+                           ->register();
