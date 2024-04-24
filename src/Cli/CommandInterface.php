@@ -6,4 +6,5 @@ namespace Feed2Email\Cli;
 
 interface CommandInterface
 {
+    public function execute(array $argv): int;
 }
