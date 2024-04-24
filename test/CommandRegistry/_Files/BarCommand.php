@@ -8,4 +8,8 @@ use Feed2Email\Cli\CommandInterface;
 
 class BarCommand implements CommandInterface
 {
+    public function execute(array $argv): int
+    {
+        return 0;
+    }
 }
