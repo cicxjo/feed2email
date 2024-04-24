@@ -46,7 +46,6 @@ class App
         }
 
         $command = $this->getCommand($commandName);
-        $command = new $command();
 
         return $command->execute($argv);
     }
