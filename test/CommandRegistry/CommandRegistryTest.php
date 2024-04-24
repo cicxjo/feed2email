@@ -22,27 +22,20 @@ class CommandRegistryTest extends TestCase
         $this->commandRegistry = new CommandRegistry();
     }
 
-    public function testRegisterCommandFooFromCommandRegistry(): void
+    public function testRegisterCommands(): void
     {
         $commandName = 'foo';
         $command = new FooCommand();
         $this->commandRegistry->registerCommand($commandName, $command);
-
         $actual = $this->commandRegistry->getCommand($commandName);
         $expected = $command;
-
         $this->assertSame($actual, $expected);
-    }
 
-    public function testRegisterCommandBarFromCommandRegistry(): void
-    {
         $commandName = 'bar';
         $command = new BarCommand();
         $this->commandRegistry->registerCommand($commandName, $command);
-
         $actual = $this->commandRegistry->getCommand($commandName);
         $expected = $command;
-
         $this->assertSame($actual, $expected);
     }
 }
