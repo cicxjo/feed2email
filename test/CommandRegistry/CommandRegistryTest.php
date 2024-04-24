@@ -38,4 +38,10 @@ class CommandRegistryTest extends TestCase
         $expected = $command;
         $this->assertSame($actual, $expected);
     }
+
+    public function testMissingCommand(): void
+    {
+        $command = $this->commandRegistry->getCommand('hello');
+        $this->assertNull($command);
+    }
 }

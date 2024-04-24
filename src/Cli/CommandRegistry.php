@@ -13,8 +13,8 @@ class CommandRegistry
         $this->commands[$commandName] = $command;
     }
 
-    public function getCommand(string $commandName): CommandInterface
+    public function getCommand(string $commandName): ?CommandInterface
     {
-        return $this->commands[$commandName];
+        return $this->commands[$commandName] ?? null;
     }
 }
